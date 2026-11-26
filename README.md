@@ -5,21 +5,31 @@ Un Bomberman classique : tu affrontes un bot qui fuit les explosions, calcule un
 Comment jouer. Lancer main.py depuis Bomberman/Code.
 
 Touche
-Action
-Z, Q, S, D
-Haut, gauche, bas, droite
-Espace
-Poser une bombe
-Clic souris
-Rejouer après la fin de partie
-Spécifications.
+
+Action : 
+
+Z, Q, S, D :Haut, gauche, bas, droite
+
+Espace : Poser une bombe
+
+Clic souris : Rejouer après la fin de partie
+
+Spécifications :
+
 • Fenêtre 800 x 800 px, grille 21 x 21, 60 FPS
+
 • Cellules de 4 types : vide, mur, mur destructible, bombe (plus l'état explosion)
+
 • Bombe : explose après 2 s, explosion en croix de portée 2 cases, qui dure 0,5 s
+
 • Cooldown de déplacement : 150 ms pour le joueur, 120 ms pour le bot
+
 • Cooldown de bombe : 2,5 s
+
 • Code découpé en main, joueur, bot, grille, cellule, settings
+
 Structure du projet
+
 
 ```
 Bomberman/
