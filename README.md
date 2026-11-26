@@ -1,5 +1,6 @@
-Bomberman
-Ce que ça fait. Un Bomberman classique : tu affrontes un bot qui fuit les explosions, calcule un chemin vers toi, casse les murs destructibles et pose ses propres bombes. Une seule bombe active par joueur ou bot.
+## Bomberman
+
+Un Bomberman classique : tu affrontes un bot qui fuit les explosions, calcule un chemin vers toi, casse les murs destructibles et pose ses propres bombes. Une seule bombe active par joueur ou bot.
 Comment jouer. Lancer main.py depuis Bomberman/Code.
 Touche
 Action
