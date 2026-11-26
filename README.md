@@ -1,65 +1,22 @@
-# 💣 Bomberman
-
-Un jeu Bomberman classique en Python avec Pygame, mettant en avant un joueur humain face à un adversaire IA intelligent.
-
-## 🎮 Fonctionnalités
-
-- **Joueur contrôlable au clavier** avec système de placement de bombes
-- **Bot** capable de :
-  - Détecter et fuir les danger (explosions)
-  - Planifier des chemins vers le joueur
-  - Casser les murs destructibles stratégiquement
-  - Attaquer le joueur en ligne droite
-  - Gérer ses propres bombes de façon intelligente
-- **Système de bombes** avec explosions en croix avec portée configurable
-- **Grille de jeu générative** avec murs indestructibles, destructibles et zones vides
-- **Limitation à 1 bombe active** par joueur/bot (contrainte classique Bomberman)
-- **Détection de mort** et écrans de victoire/défaite
-- **Gestion robuste des assets** avec chemins absolus
-
-## 🎮 Contrôles
-
-| Touche | Action |
-|--------|--------|
-| **Z** | Aller vers le haut |
-| **S** | Aller vers le bas |
-| **Q** | Aller vers la gauche |
-| **D** | Aller vers la droite |
-| **ESPACE** | Poser une bombe |
-| **Clic souris** | Recommencer après une partie |
-
-## 📋 Prérequis
-
-- Python 3.7+
-- Pygame 2.0+
-
-## 🚀 Installation
-
-### 1. Cloner le projet
-```bash
-git clone <votre-repo>
-cd Bomberman
-```
-
-### 2. Créer un environnement virtuel (recommandé)
-```bash
-python -m venv .venv
-.venv\Scripts\Activate  # Windows
-source .venv/bin/activate  # macOS/Linux
-```
-
-### 3. Installer les dépendances
-```bash
-pip install pygame
-```
-
-### 4. Lancer le jeu
-```bash
-cd Code
-python main.py
-```
-
-## 📁 Structure du projet
+Bomberman
+Ce que ça fait. Un Bomberman classique : tu affrontes un bot qui fuit les explosions, calcule un chemin vers toi, casse les murs destructibles et pose ses propres bombes. Une seule bombe active par joueur ou bot.
+Comment jouer. Lancer main.py depuis Bomberman/Code.
+Touche
+Action
+Z, Q, S, D
+Haut, gauche, bas, droite
+Espace
+Poser une bombe
+Clic souris
+Rejouer après la fin de partie
+Spécifications.
+• Fenêtre 800 x 800 px, grille 21 x 21, 60 FPS
+• Cellules de 4 types : vide, mur, mur destructible, bombe (plus l'état explosion)
+• Bombe : explose après 2 s, explosion en croix de portée 2 cases, qui dure 0,5 s
+• Cooldown de déplacement : 150 ms pour le joueur, 120 ms pour le bot
+• Cooldown de bombe : 2,5 s
+• Code découpé en main, joueur, bot, grille, cellule, settings
+Structure du projet
 
 ```
 Bomberman/
@@ -90,7 +47,7 @@ Bomberman/
 └── README.md
 ```
 
-## 🎯 Mécanique du jeu
+##  Mécanique du jeu
 
 ### Le joueur
 - Commence au coin supérieur gauche (1, 1)
@@ -151,7 +108,7 @@ Classe de base pour le joueur et le bot :
 
 
 
-## 💡 Améliorations possibles
+## Améliorations possibles
 
 - [ ] Menu principal avec options de difficulté
 - [ ] Powerups (portée augmentée, vitesse, bombes supplémentaires)
@@ -160,10 +117,10 @@ Classe de base pour le joueur et le bot :
 - [ ] Effets sonores et musique
 
 
-## 👨‍💻 Auteur
+##  Auteur
 
 Développé avec Python 3 et Pygame 2.
 
 ---
 
-**Bon jeu! 🎮**
+
